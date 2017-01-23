@@ -5,29 +5,30 @@
     <style>
         #bg {
             height: 1000px;
-            background: linear-gradient(#b3b3cc, #9494b8, #e0e0eb);
+            background: linear-gradient(#ff0000, #ff8080, #e0e0eb);
         }
+        /*box1*/
         
-        #box1 {
+        #NS {
             border-radius: 25px;
             background: linear-gradient(#d4d7dd, #9ba2b0, #e2e4e9);
             padding: 20px;
             width: 350px;
-            height:250px;
+            height: 250px;
             position: absolute;
             top: 500px;
-            right:700px;
+            right: 700px;
             word-break: keep-all;
             /*transform: rotate(360deg);*/
             transition: width 2s, height 2s, transform 2s;
+            box-shadow: 0 30px 90px 0 rgba(0, 1200, 1200, 0.4), 0 4px, 0px 0 rgba(0, 0, 0, 0.15);
         }
         
-        #box1:hover{
-            width: 450px;
-            height:350px;
+        #NS:hover {
+            /*width: 450px;*/
+            height: 350px;
             transform: rotate(360deg);
         }
-        
         /*#box1: hover {*/
         /*    width: 550px;*/
         /*    height: 450px;*/
@@ -35,15 +36,17 @@
         /*}*/
         
         #box2 {
-             border-radius: 25px;
+            border-radius: 25px;
             background: linear-gradient(#d4d7dd, #9ba2b0, #e2e4e9);
             padding: 20px;
             width: 350px;
-            height:250px;
+            height: 250px;
             position: absolute;
             top: 500px;
-            right:100px;
+            right: 100px;
             word-break: keep-all;
+            text-align: center;
+            box-shadow: 0 30px 90px 0 rgba(0, 1200, 1200, 0.4), 0 4px, 0px 0 rgba(0, 0, 0, 0.15);
         }
         
         #box3 {
@@ -51,45 +54,64 @@
             background: linear-gradient(#d4d7dd, #9ba2b0, #e2e4e9);
             padding: 20px;
             width: 350px;
-            height:250px;
+            height: 250px;
             position: absolute;
             top: 500px;
-            right:1350px;
+            right: 1350px;
             word-break: keep-all;
+            text-align: center;
+            box-shadow: 0 30px 90px 0 rgba(0, 1200, 1200, 0.4), 0 4px, 0px 0 rgba(0, 0, 0, 0.15);
         }
         
         #title {
             border-radius: 25px;
             border: 2px solid #d4d7dd;
-            padding:2px;
-            width:1000px;
-            height:250px;
-            position:absolute;
-            top:50px;
-            right:500px;
+            padding: 2px;
+            width: 1000px;
+            height: 250px;
+            position: absolute;
+            top: 50px;
+            right: 500px;
             text-align: center;
+            box-shadow: 0 30px 90px 0 rgba(0, 1200, 1200, 0.4), 0 4px, 0px 0 rgba(0, 0, 0, 0.15);
+            animation-name: slide;
+            animation-duration: 3s;
+            animation-iteration-count: 1;
+            animation-direction: alternate;
+            
+        }
+        
+        @keyframes slide {
+            0% {left:0px; top:0px;}
+            25% {left:100px; top:0px;}
         }
     </style>
 </head>
 
 <body>
     <div id="bg"></div>
+    <div class="images">
+        <div id="NS">
+            <img src="NintendoSwitch.jpg">
+        </div>
+
+    </div>
     <!--<div id="box1"></div>-->
     <!--<div id="box2"></div>-->
     <!--<div id="box3"></div>-->
-    
+
     <!--<div id="title"></div>-->
-    
+
     <!--<div class="absolute"></div>-->
-    
+
     <p id="title">New Gaming Console!</p>
     <p id="box1"></p>
     <p id="box2"></p>
     <p id="box3"></p>
-    
+
     <p id="box2">News!</p>
     <p id="box3">FAQ!</p>
-    <p id="box1">Sample Text</p>
+    <!--<p id="NS"></p>-->
 </body>
 
 </html>
