@@ -9,7 +9,7 @@
         }
         
         #box1 {
-             border-radius: 25px;
+            border-radius: 25px;
             background: linear-gradient(#d4d7dd, #9ba2b0, #e2e4e9);
             padding: 20px;
             width: 350px;
@@ -17,7 +17,15 @@
             position: absolute;
             top: 500px;
             right:700px;
-            
+            word-break: keep-all;
+            /*transform: rotate(360deg);*/
+            transition: width 2s, height 2s, transform 2s;
+        }
+        
+        #box1:hover{
+            width: 450px;
+            height:350px;
+            transform: rotate(360deg);
         }
         
         /*#box1: hover {*/
@@ -35,6 +43,7 @@
             position: absolute;
             top: 500px;
             right:100px;
+            word-break: keep-all;
         }
         
         #box3 {
@@ -46,6 +55,7 @@
             position: absolute;
             top: 500px;
             right:1350px;
+            word-break: keep-all;
         }
         
         #title {
@@ -57,21 +67,29 @@
             position:absolute;
             top:50px;
             right:500px;
+            text-align: center;
         }
     </style>
 </head>
 
 <body>
     <div id="bg"></div>
-    <div id="box1"></div>
-    <div id="box2"></div>
-    <div id="box3"></div>
+    <!--<div id="box1"></div>-->
+    <!--<div id="box2"></div>-->
+    <!--<div id="box3"></div>-->
     
-    <div id="title"></div>
+    <!--<div id="title"></div>-->
     
     <!--<div class="absolute"></div>-->
     
-    <!--<p id="title">Nintendo Switch!</p>-->
+    <p id="title">New Gaming Console!</p>
+    <p id="box1"></p>
+    <p id="box2"></p>
+    <p id="box3"></p>
+    
+    <p id="box2">News!</p>
+    <p id="box3">FAQ!</p>
+    <p id="box1">Sample Text</p>
 </body>
 
 </html>

@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One|Righteous');
+
+#box1, #box2, #box3, #title{
+    text-align: center;
+    line-height: 100%;
+    font-family: 'Righteous', cursive;
+    /*font-family: 'Alfa Slab One', cursive;*/
+    font-size: 20px;
+    text-shadow: 2px 2px 5px ;
+}
+
